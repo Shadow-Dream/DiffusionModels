@@ -1,15 +1,16 @@
-环境配置：
+<h1>2023 ZJU综合课程实践</h1>
+<h2>环境配置</h2>
 （1）conda：本目录下requirements.yml文件记录了解释模型代码所需的python库环境
 安装有pytorch 1.13+，opencv-python库的环境，应能按照报错提示安装缺漏的库以运行代码
 （2）docker：若使用docker环境，请使用docker-compose安装nvcr.io/nvidia/pytorch:23.02-py3镜像，并手动安装opencv-python
 
-模型简介：
+<h2>模型简介</h2>
 （1）Denoising Diffusion Probabilistic Model 复现了最基础的DDPM训练代码与简单测试程序
 （2）Improved Denoising Diffusion Probabilistic Model 复现了IDDPM的Linear Schedule、Cosine Schedule、DDIM与Respacing等方法
 （3）Consistency Model 复现了基于欧拉微分与MSE损失的Consistency Model中的Consistency Training与少步生成
 （4）Consistency Cold Diffusion Model 复现了基础的Cold Diffusion模型训练方法与Consistency  Cold Diffusion训练方法
 
-运行指南：
+<h2>运行指南</h2>
 （1）出于压缩文件大小考虑，数据集文件没有附带在源码文件中：
 下载地址：https://mo.zju.edu.cn/explore/6076b3efd696542fca5d0e59?type=dataset
 运行模型前，请在对应模型的utils/loader.py脚本中修改数据集路径
